@@ -34,7 +34,7 @@ public class MessageGeneratorImpl implements MessageGenerator {
     public String getResultMessage() {
 
         if (game.isGameWon()) {
-            return "You guessed it! The Number was" + game.getNumber();
+            return "You guessed it! The Number was " + game.getNumber();
         } else if(game.isGameLost()){
             return "You Lost! The Number was" + game.getNumber();
         } else if(!game.isValidNumberRange()){
@@ -47,7 +47,7 @@ public class MessageGeneratorImpl implements MessageGenerator {
             if(game.getGuess() < game.getNumber()){
                 direction = "Higher";
             }
-            return direction + "! You Have" +game.getRemainingGuesses() + "Guess Left";
+            return direction + "! You Have " +game.getRemainingGuesses() + " Guess Left ";
         }
     }
 }
