@@ -1,7 +1,5 @@
 package bhuvesh.javaspring;
 
-import org.springframework.stereotype.Component;
-
 import java.util.Random;
 
 public class NumberGeneratorImpl implements NumberGenerator {
