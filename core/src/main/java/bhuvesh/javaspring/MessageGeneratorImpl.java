@@ -36,7 +36,7 @@ public class MessageGeneratorImpl implements MessageGenerator {
         if (game.isGameWon()) {
             return "You guessed it! The Number was " + game.getNumber();
         } else if(game.isGameLost()){
-            return "You Lost! The Number was" + game.getNumber();
+            return "You Lost! The Number was " + game.getNumber();
         } else if(!game.isValidNumberRange()){
             return "Invalid Number Range";
         } else if(game.getRemainingGuesses() == guessCount){
