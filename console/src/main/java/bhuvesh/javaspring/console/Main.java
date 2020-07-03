@@ -1,6 +1,6 @@
 package bhuvesh.javaspring.console;
 
-import bhuvesh.javaspring.AppConfig;
+import bhuvesh.javaspring.config.AppConfig;
 import bhuvesh.javaspring.MessageGenerator;
 import bhuvesh.javaspring.NumberGenerator;
 import org.slf4j.Logger;
