@@ -12,10 +12,10 @@ import org.springframework.context.annotation.Import;
 public class AppConfig {
 
 //    == Bean Methods ==
-    @Bean
-    public NumberGenerator numberGenerator(){
-        return new NumberGeneratorImpl();
-    }
+//    @Bean
+//    public NumberGenerator numberGenerator(){
+//        return new NumberGeneratorImpl();
+//    }
 
     @Bean
     public Game game(){
