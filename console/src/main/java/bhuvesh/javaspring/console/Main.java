@@ -1,8 +1,6 @@
 package bhuvesh.javaspring.console;
 
-import bhuvesh.javaspring.config.AppConfig;
-import bhuvesh.javaspring.MessageGenerator;
-import bhuvesh.javaspring.NumberGenerator;
+import bhuvesh.javaspring.config.GameConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -19,7 +17,7 @@ public class Main {
         // create context (container)
 //        ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
 
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(GameConfig.class);
 
 //        // get number generator bean from context (container)
 //        NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);

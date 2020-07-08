@@ -20,11 +20,15 @@ public class ConsoleNumberGuess {
     private final Logger log =  LoggerFactory.getLogger(ConsoleNumberGuess.class);
 
     // == Fields ==
-    @Autowired
-    private Game game;
+    private final Game game;
 
-    @Autowired
-    private MessageGenerator messageGenerator;
+    private final MessageGenerator messageGenerator;
+
+    // == Constructors ==
+    public ConsoleNumberGuess(Game game, MessageGenerator messageGenerator) {
+        this.game = game;
+        this.messageGenerator = messageGenerator;
+    }
 
     // == Events ==
         @EventListener(ContextRefreshedEvent.class)
